@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ngọt — Bánh nhà làm, quận 3, TP.HCM</title>
+<meta name="description" content="Tiệm bánh handmade Ngọt, quận 3, TP.HCM. Bánh kem sinh nhật, bánh mì, bánh quy — làm theo đơn trong ngày. Mở cửa 7:00–21:00 hằng ngày.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFF8F0; --bg-alt:#FDECEA; --pink:#F4A7B3; --peach:#FBC99B;
+    --text:#5C3D2E; --text-sub:#9A7B6B; --border:#F3D9D2; --zalo:#0068FF;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:"Be Vietnam Pro",system-ui,sans-serif;font-size:15px;line-height:1.6}
+  h1,h2{font-family:"Quicksand","Be Vietnam Pro",system-ui,sans-serif;text-align:center}
+  h1{font-size:32px;color:var(--pink);margin:8px 0}
+  h2{font-size:22px;margin:0 0 20px}
+  section{padding:32px 16px}
+  section.alt{background:var(--bg-alt)}
+  .wrap{max-width:720px;margin:0 auto}
+  .note{font-size:13px;color:var(--text-sub)}
+  /* Hero */
+  .hero{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px}
+  .hero-img{width:100%;max-width:560px;border-radius:20px;display:block}
+  .slogan{font-size:17px;margin:0}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;
+    padding:0 24px;border-radius:999px;text-decoration:none;font-weight:700;
+    font-size:15px;cursor:pointer;border:2px solid var(--pink)}
+  .btn-primary{background:var(--pink);color:#fff}
+  .btn-outline{background:#fff;color:var(--text);border-color:var(--border)}
+  .btn-zalo{background:var(--zalo);border-color:var(--zalo);color:#fff}
+  /* Cards */
+  .cards{display:grid;grid-template-columns:1fr;gap:16px}
+  .card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px}
+  .card img,.card svg{width:100%;border-radius:12px;display:block}
+  .card h3{font-size:17px;margin:12px 0 4px}
+  .card p{margin:4px 0}
+  .price{color:#E8933F;font-weight:700;font-size:17px}
+  /* Form */
+  form{background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px 16px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-weight:700;margin-bottom:6px}
+  .field input,.field select,.field textarea{width:100%;min-height:44px;padding:10px 12px;
+    border:1px solid var(--border);border-radius:12px;font:inherit;color:var(--text);background:#fff}
+  .field textarea{min-height:88px;resize:vertical}
+  .error{color:#C0392B;font-size:13px;min-height:18px;display:block}
+  .success{display:none;background:var(--bg-alt);border:1px solid var(--pink);
+    border-radius:12px;padding:14px;margin-top:16px;font-weight:700}
+  .success.show{display:block}
+  form .btn{width:100%}
+  /* Delivery + contact */
+  .delivery{list-style:none;padding:0;margin:0}
+  .delivery li{margin-bottom:12px;padding-left:4px}
+  .contact{text-align:center}
+  .contact .btn{margin:6px 4px}
+  .footer-note{text-align:center}
+  @media (min-width:768px){
+    .cards{grid-template-columns:repeat(3,1fr)}
+    .hero{flex-direction:row;text-align:left}
+    .hero-img{max-width:340px}
+    .hero h1{text-align:left}
+    .hero-copy{flex:1}
+  }
+</style>
+</head>
+<body>
+
+<!-- 1. Mở đầu -->
+<section>
+  <div class="wrap hero">
+    <svg class="hero-img" viewBox="0 0 400 300" role="img" aria-label="Bánh kem trang trí dâu tươi" xmlns="http://www.w3.org/2000/svg">
+      <rect width="400" height="300" fill="#FDECEA"/>
+      <ellipse cx="200" cy="248" rx="130" ry="18" fill="#F3D9D2"/>
+      <rect x="90" y="150" width="220" height="90" rx="12" fill="#FFF8F0" stroke="#F4A7B3" stroke-width="3"/>
+      <rect x="90" y="150" width="220" height="28" rx="12" fill="#F4A7B3"/>
+      <circle cx="140" cy="140" r="22" fill="#E85D75"/><circle cx="200" cy="132" r="24" fill="#E85D75"/><circle cx="260" cy="140" r="22" fill="#E85D75"/>
+      <path d="M140 122 q6 -14 0 -22 M200 114 q6 -14 0 -22 M260 122 q6 -14 0 -22" stroke="#7CB86B" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <circle cx="130" cy="195" r="8" fill="#FBC99B"/><circle cx="200" cy="205" r="8" fill="#FBC99B"/><circle cx="270" cy="195" r="8" fill="#FBC99B"/>
+      <text x="200" y="282" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#9A7B6B">Bánh kem dâu tươi — làm theo đơn trong ngày</text>
+    </svg>
+    <div class="hero-copy">
+      <h1>NGỌT</h1>
+      <p class="slogan">Bánh nhà làm — ngọt vừa đủ, thương vừa đủ.</p>
+      <p><a class="btn btn-primary" href="#dat-banh">Đặt bánh sinh nhật</a></p>
+      <p class="note">Quận 3, TP.HCM · Mở cửa 7:00–21:00 hằng ngày</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Danh mục sản phẩm -->
+<section class="alt">
+  <div class="wrap">
+    <h2>Bánh nhà Ngọt làm</h2>
+    <div class="cards">
+      <article class="card">
+        <svg viewBox="0 0 200 150" role="img" aria-label="Bánh kem sinh nhật" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="150" fill="#FDECEA"/><rect x="45" y="75" width="110" height="45" rx="8" fill="#FFF8F0" stroke="#F4A7B3" stroke-width="2"/><circle cx="80" cy="68" r="12" fill="#E85D75"/><circle cx="120" cy="68" r="12" fill="#E85D75"/></svg>
+        <h3>Bánh kem sinh nhật</h3>
+        <p>Socola, dâu, trà xanh, vani.</p>
+        <p class="price">từ 250.000đ</p>
+        <p class="note">Size 16cm — xem chi tiết giá ở form đặt bánh.</p>
+      </article>
+      <article class="card">
+        <svg viewBox="0 0 200 150" role="img" aria-label="Bánh mì" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="150" fill="#FFF8F0"/><ellipse cx="100" cy="85" rx="62" ry="26" fill="#FBC99B" stroke="#E8933F" stroke-width="2"/><path d="M70 75 q15 -8 30 0 M105 72 q15 -8 30 0" stroke="#E8933F" stroke-width="3" fill="none"/></svg>
+        <h3>Bánh mì</h3>
+        <p>Bánh mì bơ sữa, bánh mì phô mai chảy, bánh mì hoa cúc.</p>
+        <p class="price">từ 25.000đ/chiếc</p>
+      </article>
+      <article class="card">
+        <svg viewBox="0 0 200 150" role="img" aria-label="Bánh quy" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="150" fill="#FDECEA"/><circle cx="70" cy="80" r="26" fill="#FBC99B" stroke="#E8933F" stroke-width="2"/><circle cx="130" cy="80" r="26" fill="#FBC99B" stroke="#E8933F" stroke-width="2"/><circle cx="64" cy="74" r="4" fill="#5C3D2E"/><circle cx="78" cy="88" r="4" fill="#5C3D2E"/><circle cx="124" cy="74" r="4" fill="#5C3D2E"/><circle cx="138" cy="88" r="4" fill="#5C3D2E"/></svg>
+        <h3>Bánh quy</h3>
+        <p>Bánh quy bơ, bánh quy socola chip, bánh quy yến mạch.</p>
+        <p class="price">từ 60.000đ/hộp</p>
+      </article>
+    </div>
+    <p class="note">Giá tham khảo — giá chính xác theo size và hương vị khi đặt bánh. Bánh làm theo đơn trong ngày, không làm sẵn số lượng lớn.</p>
+  </div>
+</section>
+
+<!-- 3. Form đặt bánh -->
+<section id="dat-banh">
+  <div class="wrap">
+    <h2>Đặt bánh sinh nhật</h2>
+    <form id="order-form" novalidate>
+      <div class="field">
+        <label for="ten">Họ tên người đặt *</label>
+        <input id="ten" name="ten" type="text" autocomplete="name" required>
+        <span class="error" id="err-ten"></span>
+      </div>
+      <div class="field">
+        <label for="sdt">Số điện thoại *</label>
+        <input id="sdt" name="sdt" type="tel" inputmode="tel" autocomplete="tel" placeholder="Ví dụ: 0901234567" required>
+        <span class="error" id="err-sdt"></span>
+      </div>
+      <div class="field">
+        <label for="size">Kích thước bánh *</label>
+        <select id="size" name="size" required>
+          <option value="">— Chọn kích thước —</option>
+          <option value="16cm">16cm — 4–6 người</option>
+          <option value="20cm">20cm — 8–10 người</option>
+          <option value="24cm">24cm — 12–15 người</option>
+        </select>
+        <span class="error" id="err-size"></span>
+      </div>
+      <div class="field">
+        <label for="vi">Hương vị *</label>
+        <select id="vi" name="vi" required>
+          <option value="">— Chọn hương vị —</option>
+          <option value="socola">Socola</option>
+          <option value="dau">Dâu</option>
+          <option value="tra-xanh">Trà xanh</option>
+          <option value="vani">Vani</option>
+        </select>
+        <span class="error" id="err-vi"></span>
+      </div>
+      <div class="field">
+        <label for="ngay">Ngày nhận bánh *</label>
+        <input id="ngay" name="ngay" type="date" required>
+        <span class="error" id="err-ngay"></span>
+        <span class="note">Vui lòng đặt trước ít nhất 1 ngày.</span>
+      </div>
+      <div class="field">
+        <label for="ghichu">Ghi chú thêm</label>
+        <textarea id="ghichu" name="ghichu" placeholder="Ví dụ: viết chữ lên bánh, dị ứng…"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Gửi đơn đặt bánh</button>
+      <p class="success" id="thanh-cong" role="status">Cảm ơn bạn! Ngọt sẽ gọi điện xác nhận đơn trong giờ mở cửa.</p>
+    </form>
+  </div>
+</section>
+
+<!-- 4. Giao hàng -->
+<section class="alt">
+  <div class="wrap">
+    <h2>Giao hàng nội thành</h2>
+    <ul class="delivery">
+      <li>🚚 Giao trong nội thành TP.HCM, ưu tiên quận 3 và các quận lân cận.</li>
+      <li>💰 Phí giao hàng tính theo khoảng cách — báo phí khi xác nhận đơn qua điện thoại.</li>
+      <li>🧊 Bánh kem giao bằng hộp giữ lạnh, giữ nguyên dáng bánh; khách nên nhận bánh trong khung giờ đã hẹn.</li>
+    </ul>
+    <p class="note">Khách cũng có thể đến lấy trực tiếp tại tiệm trong giờ mở cửa.</p>
+  </div>
+</section>
+
+<!-- 5. Liên hệ -->
+<section>
+  <div class="wrap contact">
+    <h2>Ghé Ngọt chơi nhé</h2>
+    <p>📍 Địa chỉ: Quận 3, TP.HCM — [Địa chỉ cụ thể — PO bổ sung]</p>
+    <p>🕖 Giờ mở cửa: 7:00–21:00 hằng ngày</p>
+    <p>
+      <a class="btn btn-outline" href="#" id="btn-goi" title="Số điện thoại sẽ do PO bổ sung">📞 Gọi cho Ngọt</a>
+      <a class="btn btn-zalo" href="#" id="btn-zalo" title="Link Zalo sẽ do PO bổ sung">💬 Chat Zalo</a>
+    </p>
+    <p class="note" id="lien-he-note">Số điện thoại và link Zalo: [PO bổ sung] — chưa gắn số/link thật vì yêu cầu gốc MSR-6 chưa có.</p>
+    <p class="note footer-note">Ngọt — Bánh nhà làm, quận 3, TP.HCM.</p>
+  </div>
+</section>
+
+<script>
+(function () {
+  "use strict";
+  var form = document.getElementById("order-form");
+  var okBox = document.getElementById("thanh-cong");
+  var ngayInput = document.getElementById("ngay");
+
+  // Ngày nhận tối thiểu = ngày mai (đặt trước ít nhất 1 ngày).
+  var mai = new Date();
+  mai.setDate(mai.getDate() + 1);
+  var iso = mai.toISOString().slice(0, 10);
+  ngayInput.setAttribute("min", iso);
+
+  function setErr(id, msg) {
+    document.getElementById("err-" + id).textContent = msg || "";
+  }
+  function soHopLe(s) {
+    // Số điện thoại Việt Nam: bắt đầu bằng 0, 10 chữ số (cho phép khoảng trắng/gạch nối khi gõ).
+    var d = s.replace(/[\s\-]/g, "");
+    return /^0\d{9}$/.test(d);
+  }
+  function ngayHopLe(v) {
+    if (!v) return false;
+    var chon = new Date(v + "T00:00:00");
+    var gioiHan = new Date();
+    gioiHan.setDate(gioiHan.getDate() + 1);
+    gioiHan.setHours(0, 0, 0, 0);
+    return !isNaN(chon.getTime()) && chon >= gioiHan;
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    okBox.classList.remove("show");
+    var ten = document.getElementById("ten").value.trim();
+    var sdt = document.getElementById("sdt").value.trim();
+    var size = document.getElementById("size").value;
+    var vi = document.getElementById("vi").value;
+    var ngay = ngayInput.value;
+    var hopLe = true;
+
+    if (!ten) { setErr("ten", "Vui lòng nhập họ tên."); hopLe = false; } else setErr("ten");
+    if (!sdt) { setErr("sdt", "Vui lòng nhập số điện thoại."); hopLe = false; }
+    else if (!soHopLe(sdt)) { setErr("sdt", "Số điện thoại chưa đúng (10 chữ số, bắt đầu bằng 0)."); hopLe = false; }
+    else setErr("sdt");
+    if (!size) { setErr("size", "Vui lòng chọn kích thước bánh."); hopLe = false; } else setErr("size");
+    if (!vi) { setErr("vi", "Vui lòng chọn hương vị."); hopLe = false; } else setErr("vi");
+    if (!ngay) { setErr("ngay", "Vui lòng chọn ngày nhận bánh."); hopLe = false; }
+    else if (!ngayHopLe(ngay)) { setErr("ngay", "Vui lòng đặt trước ít nhất 1 ngày."); hopLe = false; }
+    else setErr("ngay");
+
+    if (hopLe) { okBox.classList.add("show"); okBox.scrollIntoView({ behavior: "smooth", block: "center" }); }
+  });
+
+  // Nút liên hệ chưa có số/link thật: bấm thì báo rõ, không tự bịa số.
+  function baoChuaCo(e) {
+    e.preventDefault();
+    document.getElementById("lien-he-note").textContent =
+      "Số điện thoại / link Zalo đang chờ PO bổ sung — bạn ghé tiệm trong giờ mở cửa 7:00–21:00 nhé!";
+  }
+  document.getElementById("btn-goi").addEventListener("click", baoChuaCo);
+  document.getElementById("btn-zalo").addEventListener("click", baoChuaCo);
+})();
+</script>
+</body>
+</html>
