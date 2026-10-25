@@ -1,36 +1,23 @@
-# Ngọt — Landing page tiệm bánh handmade
+# Ngọt
 
-Landing page một trang cho tiệm bánh handmade **Ngọt**, quận 3, TP.HCM.
-Tông pastel ấm, mobile-first, tiếng Việt, giọng thân mật.
+Trang giới thiệu (landing page) **tĩnh** — tiệm bánh handmade Ngọt, quận 3, TP.HCM. Bánh kem sinh nhật, bánh mì, bánh quy — làm theo đơn trong ngày. Mở cửa 7:00–21:00 hằng ngày.. Trang được dựng bằng HTML, CSS và JavaScript thuần, không cần bước biên dịch.
 
-## Sản phẩm
+> Mọi tên, số điện thoại, địa chỉ và số liệu trên trang đều là **dữ liệu mẫu**. Giá hiển thị là **giá mẫu**. Biểu mẫu (nếu có) chỉ là giao diện minh họa: không gửi dữ liệu đi đâu và không có backend.
 
-- Bánh kem sinh nhật, bánh mì, bánh quy — làm theo đơn trong ngày.
-- Mở cửa 7:00–21:00 hằng ngày.
-- Trang gồm: giới thiệu tiệm, thực đơn bánh, lý do chọn Ngọt, đặt bánh (Zalo),
-  địa chỉ và giờ mở cửa.
-- Thiết kế theo `DESIGN.md` (TEC-37), dựng bằng `index.html` tĩnh (TEC-38).
+**Demo trực tuyến:** https://m-software-banh-ngot.genalpha.dev
+**Giấy phép:** [MIT](LICENSE) © M-Software
 
-## Link demo
+## Cách xem
 
-- Demo công khai: https://m-software-banh-ngot.genalpha.dev
-- Bản Pages mặc định: https://m-software-banh-ngot.pages.dev
+Mở `index.html` bằng trình duyệt (nhấp đúp, không cần máy chủ), hoặc mở liên kết demo ở trên. Giữ nguyên các tệp cùng thư mục vì liên kết là tương đối.
 
-## Cách chạy local
+| Tệp | Nội dung |
+|---|---|
+| `README.md` | Tài liệu giới thiệu này |
+| `index.html` | Trang chính |
 
-Không cần build, không cần cài đặt gì thêm:
+## English
 
-```bash
-# Cách 1: mở trực tiếp file
-# Mở index.html bằng trình duyệt.
+A **static** landing page for Ngọt, built with plain HTML, CSS and JavaScript. All names, contact details and figures shown are sample data, displayed prices are sample prices, and any form is interface-only — nothing is submitted and there is no backend. Open `index.html` in a browser. Licensed under MIT.
 
-# Cách 2: chạy server tĩnh (khuyên dùng, để font và đường dẫn hoạt động đúng)
-python3 -m http.server 8000
-# rồi mở http://localhost:8000
-```
-
-## Nguồn yêu cầu
-
-- Yêu cầu web MSR-6: https://github.com/Muse-Soft/m-software-requests/issues/6
-- Linear: TEC-35 (yêu cầu) → TEC-36 (Epic Sprint 1) → TEC-40 (deploy + README này).
-- Repo: https://github.com/Muse-Soft/m-software-banh-ngot
+Contact: contact@genalpha.dev
